@@ -13,9 +13,9 @@ export class AppComponent implements OnInit {
   constructor(private service: OnfidoService) {}
 
   ngOnInit() {
-    // const token = '';
-    // this.service.open(token, () => {
-    //   console.log('Great success!');
-    // });
+    const token = '';
+    this.service.open(token, () => {
+      console.log('Great success!');
+    });
   }
 }
